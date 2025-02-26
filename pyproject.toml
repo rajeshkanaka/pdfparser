@@ -1,0 +1,23 @@
+[project]
+name = "pdfparser"
+version = "0.1.0"
+readme = "README.md"
+description = "A Streamlit application for processing and comparing PDFs using Unstructured.io and OpenAI."
+dependencies = [
+    "streamlit==1.42.2",            # Streamlit UI
+    "pandas>=2.0.0",                # Data manipulation
+    "sentence-transformers>=2.2.2", # Sentence embeddings and cross-encoder
+    "faiss-cpu>=1.7.4",             # CPU-based vector indexing
+    "openai==1.64.0",               # OpenAI API integration
+    "unstructured-ingest>=0.1.0",   # Processing unstructured data
+    "python-dotenv>=1.0.0",         # Loading .env files
+    "termcolor>=2.3.0",             # Colored terminal output
+    "redis==5.2.1",                 # Redis integration
+    "numpy==2.2.3",                 # Numerical operations
+    "chromadb>=0.3.0",              # Persistent vector storage
+    "backoff>=2.0.0",               # Retry logic
+    "transformers>=4.0.0",          # Tokenization and model handling
+    "nltk>=3.6.0",                  # Natural language processing
+]
+[tool.uv]
+python = "3.11"
